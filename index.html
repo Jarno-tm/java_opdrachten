@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./index.css">
+    <title>Jarno Dumont</title>
+</head>
+
+<body onload='oefening0()'>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand"><img src="images/Webp.net-resizeimage.png"></a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page">Oefening 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" onclick='oefening2()'>Oefening 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" onclick='oefening3()'>Oefening 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mt-5">
+            <div class='oefening1'>
+                <!-- Hier mag je HTML code toevoegen -->
+                <div class="row">
+                    <div class="col">
+                        <form action="#" id="form" method="dialog" onsubmit="oefening1()">
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-md">
+                                        <label for="voornaam" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="voornaam" name="voornaam" placeholder="First Name">
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="familienaam" class="form-label">Name</label>
+                                        <input type="text" class="form-control" id="familienaam" name="familienaam" placeholder="Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="you@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="251 N Bristol Ave">
+                            </div>
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-md">
+                                        <label for="land" class="form-label">Country</label>
+                                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" type="text" class="form-control" id="land" name="land">
+                      <option selected>Choose a Country</option>
+                      <option value="1">Belgium</option>
+                      <option value="2">Netherlands</option>
+                      <option value="3">France</option>
+                    </select>
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="provincie" class="form-label">Province</label>
+                                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" type="text" class="form-control" id="provincie" name="provincie">
+                      <option selected>Choose a Province</option>
+                      <option value="1">Brussel</option>
+                      <option value="2">South-Holland</option>
+                      <option value="3">Bretagne</option>
+                    </select>
+                                    </div>
+                                    <div class="col-md">
+                                        <label for="postcode" class="form-label">Postal Code</label>
+                                        <input type="text" class="form-control" id="postcode" name="postcode" placeholder="postcode">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Me!</button>
+
+                        </form>
+                        </div>
+                        <div id="meldingcontainer" class="">
+                            <h4 id="meldingheader"></h4>
+                            <div id="melding" class="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tot en met hier -->
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class='oefening2'>
+                    <table class='table table-bordered'>
+                        <tbody id='tableBody'>
+                            <tr id='tableRow'></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class='oefening3'></div>
+            </div>
+        </div>
+
+        <script src='oefening0.js'></script>
+        <script src='oefening1.js'></script>
+        <script src='oefening2.js'></script>
+        <script src='oefening3.js'></script>
+</body>
+
+</html>
